@@ -341,3 +341,19 @@ book.language.toLowerCase().includes(search)
 displayBooks(filteredBooks);
 
 });
+/*=========================
+        MOBILE MENU
+==========================*/
+
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+if(menuBtn && navLinks){
+
+    menuBtn.onclick = function(){
+
+        navLinks.classList.toggle("active");
+
+    }
+
+}
