@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nostra Books | Collections</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            📚 Nostra <span>Books</span>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="collections.html" class="active">Collections</a></li>
+
+            <li><a href="index.html#categories">Categories</a></li>
+
+            <li><a href="index.html#authors">Authors</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <i class="fas fa-heart"></i>
+
+            <i class="fas fa-cart-shopping"></i>
+
+            <i class="fas fa-bars menu-btn"></i>
+
+        </div>
+
+    </nav>
+
+<div class="container">
+
+    <!-- COLLECTION HERO -->
+    <section class="collection-banner">
+        <h1>Explore Every Shelf</h1>
+
+        <p>
+            Discover timeless Tamil classics, world literature,
+            programming books, history, spirituality and much more.
+        </p>
+    </section>
+
+    <!-- COLLECTIONS -->
+    <section class="collection-page">
+
+        <div class="collection-container">
+
+        
+            <!-- ================= SIDEBAR ================= -->
+
+            <aside class="sidebar">
+
+                <h2>Filter Books</h2>
+
+                <!-- Language -->
+
+                <div class="filter-group">
+
+                    <h3>Language</h3>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-language" value="Tamil">
+
+                        Tamil
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-language" value="English">
+
+                        English
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-language" value="Hindi">
+
+                        Hindi
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-language" value="Japanese">
+
+                        Japanese
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-language" value="Russian">
+
+                        Russian
+
+                    </label>
+
+                </div>
+
+                <!-- Genre -->
+
+                <div class="filter-group">
+
+                    <h3>Genre</h3>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-genre" value="Historical">
+
+                        Historical
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-genre" value="Classic">
+
+                        Classic
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-genre" value="Programming">
+
+                        Programming
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-genre" value="Business">
+
+                        Business
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-genre" value="Self Help">
+
+                        Self Help
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-genre" value="Spiritual">
+
+                        Spiritual
+
+                    </label>
+
+                </div>
+
+                <!-- Price -->
+
+                <div class="filter-group">
+
+                    <h3>Price</h3>
+
+                    <label>
+
+                        <input type="radio" name="price" class="filter-price" value="300">
+
+                        Below ₹300
+
+                    </label>
+
+                    <label>
+
+                        <input type="radio" name="price" class="filter-price" value="700">
+
+                        ₹300 - ₹700
+
+                    </label>
+
+                    <label>
+
+                        <input type="radio" name="price" class="filter-price" value="701">
+
+                        Above ₹700
+
+                    </label>
+
+                </div>
+
+                <!-- Rating -->
+
+                <div class="filter-group">
+
+                    <h3>Rating</h3>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-rating" value="5">
+
+                        ⭐⭐⭐⭐⭐
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox" class="filter-rating" value="4">
+
+                        ⭐⭐⭐⭐ & Up
+
+                    </label>
+
+                </div>
+
+                <!-- Availability -->
+
+                <div class="filter-group">
+
+                    <h3>Availability</h3>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        In Stock
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Pre Order
+
+                    </label>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Coming Soon
+
+                    </label>
+
+                </div>
+
+            </aside>
+
+            <!-- ================= RIGHT CONTENT ================= -->
+
+            <main>
+
+                <!-- Search -->
+
+                <div class="search-section">
+
+                    <div class="search-box">
+
+                        <input type="text" id="searchInput" placeholder="Search books, authors or categories...">
+
+                        <button>
+
+                            <i class="fas fa-search"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Active Filters -->
+
+                <div class="active-filters">
+
+                    <!-- Generated by JavaScript -->
+
+                </div>
+
+                <!-- ================= BOOK GRID ================= -->
+
+                <!-- ================= BOOK GRID ================= -->
+
+<div class="books-grid" id="booksContainer">
+
+    <!-- ================= BOOK 1 ================= -->
+    <div class="book-card" data-title="Ponniyin Selvan" data-author="Kalki">
+        
+        <img src="images/books/ponniyin-selvan.jpg" alt="Ponniyin Selvan">
+
+        <div class="book-content">
+            <h3>Ponniyin Selvan</h3>
+            <p class="author">Kalki Krishnamurthy</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹899</div>
+
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ================= BOOK 2 ================= -->
+
+    <div class="book-card" data-title="Autobiography of a Yogi" data-author="Paramahansa Yogananda">
+
+        <img src="images/books/autobiography-of-a-yogi.jpg" alt="Autobiography of a Yogi">
+
+        <div class="book-content">
+            <h3>Autobiography of a Yogi</h3>
+            <p class="author">Paramahansa Yogananda</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹799</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 3 ================= -->
+
+    <div class="book-card" data-title="Parthiban Kanavu" data-author="Kalki">
+
+        <img src="images/books/parthiban-kanavu.jpg" alt="Parthiban Kanavu">
+
+        <div class="book-content">
+            <h3>Parthiban Kanavu</h3>
+            <p class="author">Kalki Krishnamurthy</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹499</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 4 ================= -->
+
+    <div class="book-card" data-title="Thirukkural" data-author="Thiruvalluvar">
+
+        <img src="images/books/thirukkural.jpg" alt="Thirukkural">
+
+        <div class="book-content">
+            <h3>The Thirukkural</h3>
+            <p class="author">Tamil Saint Thiruvalluvar</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹299</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 5 ================= -->
+
+    <div class="book-card" data-title="Kurinjimalar" data-author="Na. Parthasarathy">
+
+        <img src="images/books/kurinjimalar.jpg" alt="Kurinjimalar">
+
+        <div class="book-content">
+            <h3>Kurinjimalar</h3>
+            <p class="author">Na. Parthasarathy</p>
+
+            <div class="rating">★★★★☆</div>
+
+            <div class="book-price">₹450</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 6 ================= -->
+
+    <div class="book-card" data-title="Oru Puliyamarathin Kathai" data-author="Sundara Ramasamy">
+
+        <img src="images/books/puliyamaram.jpg" alt="Oru Puliyamarathin Kathai">
+
+        <div class="book-content">
+            <h3>Puliyamaram</h3>
+            <p class="author">S Ramasamy</p>
+
+            <div class="rating">★★★★☆</div>
+
+            <div class="book-price">₹399</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 7 ================= -->
+
+    <div class="book-card" data-title="The Alchemist" data-author="Paulo Coelho">
+
+        <img src="images/books/alchemist.jpg" alt="The Alchemist">
+
+        <div class="book-content">
+            <h3>The Alchemist</h3>
+            <p class="author">Paulo Coelho</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹499</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 8 ================= -->
+
+    <div class="book-card" data-title="Atomic Habits" data-author="James Clear">
+
+        <img src="images/books/atomic-habits.jpg" alt="Atomic Habits">
+
+        <div class="book-content">
+            <h3>Atomic Habits</h3>
+            <p class="author">James Clear</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹599</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 9 ================= -->
+
+    <div class="book-card" data-title="Sapiens" data-author="Yuval Noah Harari">
+
+        <img src="images/books/sapiens.jpg" alt="Sapiens">
+
+        <div class="book-content">
+            <h3>Worlds Best Seller Sapiens</h3>
+            <p class="author">Yuval Noah Harari</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹799</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 10 ================= -->
+
+    <div class="book-card" data-title="Rich Dad Poor Dad" data-author="Robert Kiyosaki">
+
+        <img src="images/books/rich-dad-poor-dad.jpg" alt="Rich Dad Poor Dad">
+
+        <div class="book-content">
+            <h3>Rich Dad Poor Dad</h3>
+            <p class="author">R Kiyosaki</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹399</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 11 ================= -->
+
+    <div class="book-card" data-title="Ikigai" data-author="Hector Garcia">
+
+        <img src="images/books/ikigai.jpg" alt="Ikigai">
+
+        <div class="book-content">
+            <h3>Ikigai</h3>
+            <p class="author">Hector Garcia</p>
+
+            <div class="rating">★★★★☆</div>
+
+            <div class="book-price">₹450</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- ================= BOOK 12 ================= -->
+
+    <div class="book-card" data-title="Clean Code" data-author="Robert C. Martin">
+
+        <img src="images/books/clean-code.jpg" alt="Clean Code">
+
+        <div class="book-content">
+            <h3>Clean Code</h3>
+            <p class="author">Robert C. Martin</p>
+
+            <div class="rating">★★★★★</div>
+
+            <div class="book-price">₹799</div>
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- No Results -->
+
+<div class="no-results" id="noResults">
+    <h2>No books found</h2>
+    <p>Try changing your search or filter.</p>
+</div>
+</div>   <!-- closes container -->
+
+</body>
