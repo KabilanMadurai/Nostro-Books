@@ -5,7 +5,7 @@ Nostra Books is a modern and responsive online bookstore website built using **H
 
 ## 🌐 Live Demo
 
-👉 https://kabilanmadurai.github.io/Nostra-Books/
+👉 https://kabilanmadurai.github.io/Nostro-Books/
 
 
 ## 📸 Preview
