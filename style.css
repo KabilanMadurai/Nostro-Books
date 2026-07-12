@@ -1566,267 +1566,181 @@ footer .copyright {
 
 }
 
-/*=================================================
-                RESPONSIVE DESIGN
-==================================================*/
+/*=========================================
+        RESPONSIVE DESIGN
+==========================================*/
 
-/*==============================
-        LARGE LAPTOPS
-===============================*/
+/*=========================================
+        LAPTOP (≤1200px)
+==========================================*/
 
-@media (max-width:1200px) {
+@media (max-width:1200px){
 
-    h1 {
-        font-size: 3rem;
+    section{
+        padding:70px 5%;
     }
 
+    h1{
+        font-size:3rem;
+    }
+
+    .hero{
+        gap:40px;
+    }
+
+}
+
+
+/*=========================================
+        TABLET (≤992px)
+==========================================*/
+
+@media (max-width:992px){
+
+    .hero,
+    .collection-container,
+    .contact-container,
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-buttons,
+    .social-icons{
+        justify-content:center;
+    }
+
+    .features,
+    .category-grid,
+    .author-grid,
     .product-grid,
-    .books-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .sidebar{
+        position:static;
     }
 
 }
 
-/*==============================
-        TABLETS
-===============================*/
 
-@media (max-width:992px) {
+/*=========================================
+        MOBILE (≤768px)
+==========================================*/
 
-    section {
-        padding: 70px 5%;
+@media (max-width:768px){
+
+    /* Navbar */
+
+    .navbar{
+        padding:15px 20px;
+        position:relative;
     }
 
-    .navbar {
-        padding: 18px 5%;
+    .logo{
+        font-size:1.5rem;
     }
 
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 40px;
+    .menu-btn{
+        display:block;
+        font-size:28px;
+        cursor:pointer;
     }
 
-    .hero-content p {
-        margin: auto;
-        margin-bottom: 30px;
+    .nav-icons i:not(.menu-btn){
+        display:none;
     }
 
-    .hero-buttons {
-        justify-content: center;
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#fff;
+        text-align:center;
+        padding:20px 0;
+        box-shadow:0 10px 20px rgba(0,0,0,.1);
+        z-index:999;
     }
 
-    .features {
-        grid-template-columns: repeat(2, 1fr);
+    .nav-links.active{
+        display:flex;
     }
 
-    .category-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .nav-links li{
+        margin:15px 0;
     }
 
-    .author-grid {
-        grid-template-columns: repeat(2, 1fr);
+    /* Typography */
+
+    h1{
+        font-size:2.2rem;
     }
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
+    h2{
+        font-size:1.8rem;
     }
 
-    .why-grid {
-        grid-template-columns: repeat(2, 1fr);
+    p{
+        font-size:15px;
     }
 
-    .collection-container {
-        grid-template-columns: 1fr;
+    section{
+        padding:50px 20px;
     }
 
-    .sidebar {
-        position: static;
+    /* Layout */
+
+    .hero{
+        min-height:auto;
+        gap:30px;
     }
 
-    .books-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
     }
 
-    .contact-container {
-        grid-template-columns: 1fr;
+    .btn-outline{
+        margin-left:0;
     }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
+    .features,
+    .category-grid,
+    .author-grid,
+    .product-grid,
+    .why-grid{
+        grid-template-columns:1fr;
     }
 
-    .social-icons {
-        justify-content: center;
+    .newsletter-box{
+        flex-direction:column;
     }
 
-}
-
-/*==============================
-        MOBILE MENU
-===============================*/
-
-@media (max-width:768px) {
-
-    .menu-btn {
-        display: block;
-        cursor: pointer;
+    .newsletter-box input,
+    .newsletter-box button{
+        width:100%;
     }
 
-    .nav-links {
-
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: white;
-        flex-direction: column;
-        text-align: center;
-        display: none;
-        padding: 25px 0;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
-
+    .contact-form{
+        padding:25px;
     }
 
-    .nav-links.active {
-        display: flex;
+    .info-card{
+        flex-direction:column;
+        text-align:center;
     }
 
-    .nav-links li {
-        margin: 15px 0;
+    .books-grid{
+        justify-content:center;
     }
 
-    .nav-icons i:not(.menu-btn) {
-        display: none;
-    }
-
-}
-
-/*==============================
-        MOBILE DEVICES
-===============================*/
-
-@media (max-width:576px) {
-
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    section {
-        padding: 60px 20px;
-    }
-
-    .hero {
-        min-height: auto;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .btn-outline {
-        margin-left: 0;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-    }
-
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .author-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .books-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .newsletter-box {
-        flex-direction: column;
-        border-radius: 18px;
-    }
-
-    .newsletter-box input {
-        width: 100%;
-    }
-
-    .newsletter-box button {
-        width: 100%;
-        border-radius: 0 0 18px 18px;
-    }
-
-    .contact-form {
-        padding: 25px;
-    }
-
-    .info-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .business-hours ul li {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .pagination {
-        flex-wrap: wrap;
-    }
-
-    .collection-banner h1,
-    .contact-hero h1 {
-        font-size: 2.2rem;
-    }
-
-}
-
-/*==============================
-        SMALL DEVICES
-===============================*/
-
-@media (max-width:400px) {
-
-    .logo {
-        font-size: 1.4rem;
-    }
-
-    .navbar {
-        padding: 15px;
-    }
-
-    .hero-content h4 {
-        font-size: 13px;
-    }
-
-    .price,
-    .book-price {
-        font-size: 1.2rem;
-    }
-
-    .product-card button,
-    .book-card button {
-        font-size: 14px;
+    .book-card{
+        width:90%;
+        max-width:240px;
     }
 
 }
